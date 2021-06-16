@@ -34,14 +34,20 @@ public class ManupulativeServiceTest {
 
 
     @Test
-    @DisplayName("Test that the service layer that accepts empty/null string and return meaningful error")
-    public void testStringSplitOnManipulativeLogicWhenStringIsEmptyOrNull() {
+    @DisplayName("Test that the service layer that accepts null string and return meaningful error")
+    public void testStringSplitOnManipulativeLogicWhenStringIsNULL() {
 
-        Map<String, String> actualResult = manupulativeService.doOperation(null);
-        Assertions.assertNull(actualResult);
+        Map<String, String> actualResultWhenStringNULL = manupulativeService.doOperation(null);
+        Assertions.assertNull(actualResultWhenStringNULL);
     }
 
+    @Test
+    @DisplayName("Test that the service layer that accepts empty string and return meaningful error")
+    public void testStringSplitOnManipulativeLogicWhenStringIsEmpty() {
 
+        Map<String, String> actualResult = manupulativeService.doOperation("");
+        Assertions.assertNull(actualResult);
+    }
 
 
 }

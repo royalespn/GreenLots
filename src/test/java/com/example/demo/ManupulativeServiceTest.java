@@ -1,16 +1,17 @@
 package com.example.demo;
 
+import com.example.demo.Service.ManupulativeService;
+import com.example.demo.Service.ManupulativeServiceImpl;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.Map;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = { ManupulativeService.class })
+@ContextConfiguration(classes = { ManupulativeServiceImpl.class })
 public class ManupulativeServiceTest {
 
     private static final String INPUT_STRING = "ABCDE";

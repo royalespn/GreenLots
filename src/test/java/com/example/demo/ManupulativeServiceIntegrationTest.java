@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import com.example.demo.Service.ManupulativeServiceImpl;
+import com.example.demo.controller.ManupukationController;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +31,7 @@ public class ManupulativeServiceIntegrationTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private ManupulativeService manupulativeService;
+    private ManupulativeServiceImpl manupulativeService;
 
     @Autowired
     private ManupukationController controller;

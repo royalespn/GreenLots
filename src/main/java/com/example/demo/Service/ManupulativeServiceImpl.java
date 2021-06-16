@@ -1,16 +1,14 @@
-package com.example.demo;
+package com.example.demo.Service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
-
 
 import java.util.HashMap;
 import java.util.Map;
 
 @Component
 @Slf4j
-public class ManupulativeService {
+public class ManupulativeServiceImpl implements ManupulativeService {
 
     public Map<String, String> doOperation(String str) {
 
